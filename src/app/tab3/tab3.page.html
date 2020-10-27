@@ -1,17 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Cadastro
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-label position='floating'>Nome</ion-label>
+        <ion-input name='nome' id='nome' [(ngModel)]='cliente.nome'></ion-input>
+      </ion-item>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+      <ion-item>
+        <ion-label position='floating'>Email</ion-label>
+        <ion-input name='email' id='email' [(ngModel)]='cliente.email'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position='floating'>Foto</ion-label>
+        <ion-input name='foto' id='foto' [(ngModel)]='cliente.foto'></ion-input>
+      </ion-item>
+
+      <ion-button id="btn1" expand='full' color='primary' class="ion-text-uppercase ion-margin">Cadastrar</ion-button>
+   <br/
+      <div id="message">
+    {{cliente | json}}
+   </div>
+    </ion-list>
+  
+  </ion-card>
+  
+ 
+
+
+
 </ion-content>

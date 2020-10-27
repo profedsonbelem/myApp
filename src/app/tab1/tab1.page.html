@@ -1,17 +1,59 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+     Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ <h1 class="ion-text-center">Bem vindo ao Ionic!</h1>
+  <ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-item>
+      <ion-avatar slot='start'>
+        <img src='https://randomuser.me/api/portraits/men/51.jpg'>
+      </ion-avatar>
+      <ion-label>
+        <h3>Edson Belém</h3>
+        <p>CTO ArqIno</p>
+      </ion-label>
+    </ion-item>
+
+    <img src='https://images2.alphacoders.com/951/951330.jpg'>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Arquiteto Inovação</ion-card-title>
+    </ion-card-header>
+    <ion-card-content color='medium'>
+      Acreditamos no uso da tecnologia como base para o crescimento exponencial.
+    </ion-card-content>
+    
+    <ion-footer>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <button>
+            <ion-icon name='thumbs-up'></ion-icon>
+            <div>1.5k Likes</div>
+          </button>  
+        </ion-col>
+
+        <ion-col>
+          <button>
+            <ion-icon name='text'></ion-icon>
+            <div>4 Comentários</div>
+          </button>  
+        </ion-col>
+
+        <ion-col>
+          <button>
+            <ion-icon name='time'></ion-icon>
+            <div>12h atrás</div>
+          </button>  
+        </ion-col>
+
+
+      </ion-row>
+    </ion-footer>
+  </ion-card>
+  
 </ion-content>
